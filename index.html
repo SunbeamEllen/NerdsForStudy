@@ -4,39 +4,167 @@
 	<meta charset="UTF-8">
 	<title>HTML Academy: Нердс</title>
 </head>
-<body>
-	<header class="main-header">
-		<div class="container">
-			<a href="#" class="logo">
-				<img src="img/logo.png" alt="Nerd's studio">
-			</a>
+<body>	
+	<input class="btn-1" type="radio" id="btn-1" name="toggle" checked>
+    <input class="btn-2" type="radio" id="btn-2" name="toggle">
+    <input class="btn-3" type="radio" id="btn-3" name="toggle">
+    <div class="wrapper">
+    	<header class="main-header">
+			<div class="container clearfix">
+				<a href="#" class="logo">
+					<img src="img/logo.png" alt="Nerd's studio">
+				</a>
 
-			<nav class="main-navigation">
-				<ul>
-					<li><a href="#">Студия</a></li>
-					<li><a href="#">Клиенты</a></li>
-					<li><a href="#">Магазин</a></li>
-					<li><a href="#">Контакты</a></li>
-				</ul>
-			</nav>
+				<nav class="main-navigation">
+					<ul>
+						<li><a href="#">Студия</a></li>
+						<li><a href="#">Клиенты</a></li>
+						<li><a href="#">Магазин</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+				</nav>
 
-			<div class="cart">
-				<a href="#" class="bucket">Корзина</a>
+				<div class="cart">
+					<a href="#" class="bucket">Корзина</a>
+				</div>
 			</div>
-		</div>
-	</header>
 
-	<main class="container">
-		<div class="slider">
+			<div class="slider">
+				<div class="slide slide1">
+					<div class="slide-title">
+						<h2>Долго, дорого, скурпулезно.</h2>
+						<p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+						<a href="#" class="btn slide-btn">Узнать больше</a>
+					</div>			
+				</div>
+
+				<div class="slide slide2">
+					<div class="slide-title">
+						<h2>Долго, дорого, скурпулезно.</h2>
+						<p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+						<a href="#" class="btn slide-btn">Узнать больше</a>
+					</div>
+				</div>
+
+				<div class="slide slide3">
+					<div class="slide-title">
+						<h2>Долго, дорого, скурпулезно.</h2>
+						<p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+						<a href="#" class="btn slide-btn">Узнать больше</a>
+					</div>
+				</div>
+
+				<div class="slider-controls">
+					<label class="controls" for="btn-1"></label>
+           			<label class="controls" for="btn-2"></label>
+            		<label class="controls" for="btn-3"></label>
+				</div>
+			</div>
+		</header>
+
+		<main>
+			<div class="container clearfix">
+				<article class="workspace">
+					<section class="workspace-item">
+						<img src="" alt="notebook">
+						<div class="workspace-info">
+							<h3 class="workspace-headline">веб сайты</h3>
+							<p class="workspace-text">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+						</div>
+						<a href="#" class="btn workspace-btn">заказать</a>
+					</section>
+					<section class="workspace-item">
+						<img src="" alt="smartphones">
+						<div class="workspace-info">
+							<h3 class="workspace-headline">приложения</h3>
+							<p class="workspace-text">Покорите топ-10 приложений в AppStore и Google Play</p>
+						</div>
+						<a href="#" class="btn workspace-btn">заказать</a>
+					</section>
+					<section class="workspace-item">
+						<img src="" alt="tv">
+						<div class="workspace-info">
+							<h3 class="workspace-headline">презентации</h3>
+							<p class="workspace-text">Вы даже не подозреваете, насколько вы изумительны!</p>
+						</div>
+						<a href="#" class="btn workspace-btn">заказать</a>
+					</section>
+				</article>
+
+				<article class="studio-info">
+					<section class="about-us">
+						<h1 class="about-us-headline">Мы — маленькая, но гордая дизайн-студия из Краснодара.</h1>
+						<p class="about-us-text">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
+						<section class="our-functions">
+							<h3 class="heading">Выполняем заказы на разработку:</h3>
+							<ul class="functions">
+								<li class="functions-item">Веб-сайтов любой сложности</li>
+								<li class="functions-item">Мобильных приложений для iOS и Android</li>
+								<li class="functions-item">Слайдшоу и видео для корпоративных презентаций</li>
+							</ul>
+						</section>
+					</section>
+
+					<section class="our-preferences">
+						<img src="" alt="nerds">
+						<h3 class="heading">с 2004 года Любим точность во всем:</h3>
+						<section class="preferences">
+							<span class="percent">146%</span>
+							<span class="preferences-item">Уровень самоотдачи</span>
+						</section>
+						<section class="preferences">
+							<span class="percent">100%</span>
+							<span class="preferences-item">Соблюдение сроков</span>
+						</section>
+						<section class="preferences">
+							<span class="percent">50%</span>
+							<span class="preferences-item">Минимальная предоплата</span>
+						</section>
+					</section>
+				</article>
+
+				<article class="sponsors">
+					<sectiion class="sponsors-item">
+						<a href="#" class="sponsors-link"><img src="" alt="htmlacacademy"></a>
+					</sectiion>
+					<sectiion class="sponsors-item">
+						<a href="#" class="sponsors-link"><img src="" alt="barbershop"></a>
+					</sectiion>
+					<sectiion class="sponsors-item">
+						<a href="#" class="sponsors-link"><img src="" alt="pink"></a>
+					</sectiion>
+					<sectiion class="sponsors-item">
+						<a href="#" class="sponsors-link"><img src="" alt="miska"></a>
+					</sectiion>
+				</article>
+			</div>	
 			
-		</div>
+			<div class="map clearfix">
+				<div class="map-canvas" id="map-canvas"></div>
+				<div class="main-contacts">
+					<h3 class="heading">NЁRDS DESIGN STUDIO</h3>
+					<p>191186,Санкт-Петербург,<br> ул. Большая Конюшенная д. 19/8</p>
+					
+					<p>тел. +7 812 275-75-75</p>
+					<a href="#" class="btn feedback">Напишите нам</a>
+				</div>		
+			</div>
+		</main>
 
-		
-		
-	</main>
+		<footer class="main-footer">
+			<div class="container clearfix">
+				<div class="footer-social">
+					<a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+					<a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+					<a class="social-btn social-btn-inst" href="#">Инстаграм</a>    		
+  				</div>
 
-	<footer>
-		
-	</footer>	
+  				<div class="footer-info">
+  					<h2 class="footer-headline">Давайте дружить, это выгодно!</h2>
+  					<span class="proposition">Скидка 10% для друзей из социальных сетей.</span>
+  				</div>
+			</div>		
+		</footer>
+    </div>		
 </body>
 </html>
