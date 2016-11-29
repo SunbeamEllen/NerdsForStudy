@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="кг">
+<head>
+	<meta charset="UTF-8">
+	<title>Nerds catalog</title>
+</head>
+<body>
+	<div class="wrapper">
+		<header class="main-header">
+			<div class="container clearfix">
+				<a href="#" class="logo">
+					<img src="img/logo.png" alt="Nerd's studio">
+				</a>
+
+				<nav class="main-navigation">
+					<ul>
+						<li><a href="#">Студия</a></li>
+						<li><a href="#">Клиенты</a></li>
+						<li><a href="#">Магазин</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+				</nav>
+
+				<div class="cart">
+					<a href="#" class="bucket">Корзина</a>
+				</div>
+
+				<div class="catalog-title">
+					<h1 class="title">Магазин готовых шаблонов</h1>
+				</div>	
+			</div>					
+		</header>
+
+		<main>
+			<div class="container clearfix">
+				<aside class="choice">
+					<form action="#" class="choice-zone" method="get">
+						<fildset class="choice-zone-item">
+							<legend>Стоимость</legend>
+							<div class="range-controls">
+								<div class="scale">
+									<div class="bar"></div>
+								</div>
+								<div class="toggle toggle-min"></div>
+								<div class="toggle toggle-max"></div>
+							</div>
+							<div class="price-controls">
+								<label class="min-price">от <input name="min-price" type="text" value="0"></label>
+        						<label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+							</div>
+						</fildset>
+
+						<fieldset class="choice-zone-item">
+							<legend>Сетка</legend>
+							<div class="network">
+								<input type="radio" class="radio-input" name="grid" value="Адаптивная" id="adaptive" checked>
+								<label for="adaptive" class="radio-label">Адаптивная</label>
+								<input type="radio" class="radio-input" name="grid" value="Фиксированная" id="fixed">
+								<label for="fixed" class="radio-label">Фиксированная</label>
+								<input type="radio" class="radio-input" name="grid" value="Резиновая" id="rubber">
+								<label for="rubber" class="radio-label">Резиновая</label>
+							</div>							
+						</fieldset>
+
+						<fieldset class="choice-zone-item">
+							<legend>Особенности</legend>
+							<div class="features">
+								 <input type="checkbox" class="checkbox-input" name="slider" value="Слайдер" id="slider">
+								 <label for="slider" class="checkbox-label"></label>
+								 <input type="checkbox" class="checkbox-input" name="features" value="Преимущества" id="features">
+								 <label for="features" class="checkbox-label"></label>
+								 <input type="checkbox" class="checkbox-input" name="news" value="Новости" id="news">
+								 <label for="news" class="checkbox-label"></label>
+								 <input type="checkbox" class="checkbox-input" name="gallery" value="Галлерея" id="gallery">
+								 <label for="gallery" class="checkbox-label"></label>
+								 <input type="checkbox" class="checkbox-input" name="bucket" value="Корзина" id="bucket">
+								 <label for="bucket" class="checkbox-label"></label>								
+							</div>
+						</fieldset>
+						<button class="btn btn-show" type="submit">Показать</button>
+					</form>
+				</aside>
+
+				<div class="gallery">
+					<div class="gallery-header">
+						<h2 class="headline">сортировать:</h2>
+						<div class="breadcrumbs">							
+							<span class="breadcrumbs-item">по цене</span>
+							<span class="breadcrumbs-item">по типу</span>
+							<span class="breadcrumbs-item">по названию</span>
+						</div>
+						<div class="arrows">
+							<div class="down"></div>
+							<div class="up"></div>
+						</div>
+					</div>
+
+					<article class="gallery-item">
+						<section class="sedona"></section>
+						<section class="pink"></section>
+					</article>
+					<article class="gallery-item">
+						<section class="borodinski"></section>
+						<section class="mishka"></section>
+					</article>
+					<article class="gallery-item">
+						<section class="a_plus"></section>
+						<section class="kvast"></section>
+					</article>
+
+					<div class="paginator">
+						<a href="#" class="page">1</a>
+						<a href="#" class="page">2</a>
+						<a href="#" class="page">3</a>
+						<a href="#" class="page next">Следующая</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="map clearfix">
+				<div class="map-canvas" id="map-canvas"></div>
+				<div class="main-contacts">
+					<h3 class="heading">NЁRDS DESIGN STUDIO</h3>
+					<p>191186,Санкт-Петербург,<br> ул. Большая Конюшенная д. 19/8</p>
+					
+					<p>тел. +7 812 275-75-75</p>
+					<a href="#" class="btn feedback">Напишите нам</a>
+				</div>		
+			</div>
+		</main>
+
+		<footer class="main-footer">
+			<div class="container clearfix">
+				<div class="footer-social">
+					<a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+					<a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+					<a class="social-btn social-btn-inst" href="#">Инстаграм</a>    		
+  				</div>
+
+  				<div class="footer-info">
+  					<h2 class="footer-headline">Давайте дружить, это выгодно!</h2>
+  					<span class="proposition">Скидка 10% для друзей из социальных сетей.</span>
+  				</div>
+			</div>		
+		</footer>
+		<div class="modal-content">
+			<span>Напишите нам</span>
+			<button class="close" type="button" title="Закрыть">Закрыть</button>
+			<form action="#" class="popup-form" method="post">
+				<input class="popup-input" type="text" name="username" placeholder="Представьтесь, пожалуйста" id="username">
+				<label class="popup-label" for="username">Ваше имя:</label>
+				<input class="popup-input" type="email" name="mail" placeholder="Для отправки ответа" id="mail">
+				<label class="popup-label" for="mail">Ваш e-mail:</label>
+				<textarea class="popup-textarea" name="text" id="text" cols="30" rows="10" placeholder="В свободной форме"></textarea>
+				<label class="popup-label" for="text">Текст письма:</label>
+				<button class="btn modal-btn" type="submit" title="Отправить">Отправить</button>
+			</form>
+		</div>
+	</div>
+</body>
+</html>
