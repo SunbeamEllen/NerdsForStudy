@@ -5,14 +5,11 @@
 	<title>Nerds index</title>
 </head>
 <body>	
-	<input class="btn-1" type="radio" id="btn-1" name="toggle" checked>
-    <input class="btn-2" type="radio" id="btn-2" name="toggle">
-    <input class="btn-3" type="radio" id="btn-3" name="toggle">
-    <div class="wrapper">
+	<div class="wrapper">
     	<header class="main-header">
 			<div class="container clearfix">
 				<a href="#" class="logo">
-					<img src="img/logo.png" alt="Nerd's studio">
+					<img src="img/logo.png" width="" height="" alt="Nerd's studio">
 				</a>
 
 				<nav class="main-navigation">
@@ -59,84 +56,96 @@
            			<label class="controls" for="btn-2"></label>
             		<label class="controls" for="btn-3"></label>
 				</div>
+
+				<input class="btn-1" type="radio" id="btn-1" name="toggle" checked>
+    			<input class="btn-2" type="radio" id="btn-2" name="toggle">
+    			<input class="btn-3" type="radio" id="btn-3" name="toggle">
 			</div>
 		</header>
 
 		<main>
 			<div class="container clearfix">
-				<article class="workspace">
-					<section class="workspace-item">
-						<img src="" alt="notebook">
+				<section class="workspace">
+					<article class="workspace-item">
+						<div class="workspace-img">
+							<img src="" width="" height="" alt="notebook">
+						</div>						
 						<div class="workspace-info">
 							<h3 class="workspace-headline">веб сайты</h3>
 							<p class="workspace-text">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
 						</div>
 						<a href="#" class="btn workspace-btn">заказать</a>
-					</section>
-					<section class="workspace-item">
-						<img src="" alt="smartphones">
+					</article>
+					<article class="workspace-item">
+						<div class="workspace-img">
+							<img src="" width="" height="" alt="smartphones">
+						</div>						
 						<div class="workspace-info">
 							<h3 class="workspace-headline">приложения</h3>
 							<p class="workspace-text">Покорите топ-10 приложений в AppStore и Google Play</p>
 						</div>
 						<a href="#" class="btn workspace-btn">заказать</a>
-					</section>
-					<section class="workspace-item">
-						<img src="" alt="tv">
+					</article>
+					<article class="workspace-item">
+						<div class="workspace-img">
+							<img src="" width="" height="" alt="tv">
+						</div>
 						<div class="workspace-info">
 							<h3 class="workspace-headline">презентации</h3>
 							<p class="workspace-text">Вы даже не подозреваете, насколько вы изумительны!</p>
 						</div>
 						<a href="#" class="btn workspace-btn">заказать</a>
-					</section>
-				</article>
+					</article>
+				</section>
 
-				<article class="studio-info">
+				<section class="studio-info">
 					<section class="about-us">
 						<h1 class="about-us-headline">Мы — маленькая, но гордая дизайн-студия из Краснодара.</h1>
 						<p class="about-us-text">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
-						<section class="our-functions">
+						<article class="our-functions">
 							<h3 class="heading">Выполняем заказы на разработку:</h3>
 							<ul class="functions">
 								<li class="functions-item">Веб-сайтов любой сложности</li>
 								<li class="functions-item">Мобильных приложений для iOS и Android</li>
 								<li class="functions-item">Слайдшоу и видео для корпоративных презентаций</li>
 							</ul>
-						</section>
+						</article>
 					</section>
 
 					<section class="our-preferences">
-						<img src="" alt="nerds">
-						<h3 class="heading">с 2004 года Любим точность во всем:</h3>
-						<section class="preferences">
+							<div class="preferences-img">
+								<img src="" width="" height="" alt="nerds">
+							</div>							
+							<h3 class="heading">с 2004 года Любим точность во всем:</h3>
+						<article class="preferences">
 							<span class="percent">146%</span>
 							<span class="preferences-item">Уровень самоотдачи</span>
-						</section>
-						<section class="preferences">
+						</article>
+						<article class="preferences">
 							<span class="percent">100%</span>
 							<span class="preferences-item">Соблюдение сроков</span>
-						</section>
-						<section class="preferences">
+						</article>
+						<article class="preferences">
 							<span class="percent">50%</span>
 							<span class="preferences-item">Минимальная предоплата</span>
-						</section>
+						</article>
 					</section>
-				</article>
+				</section>
 
-				<article class="sponsors">
-					<sectiion class="sponsors-item">
+				<section class="portfolio">
+					<article class="portfolio-item">
 						<a href="#" class="sponsors-link"><img src="" alt="htmlacacademy"></a>
-					</sectiion>
-					<sectiion class="sponsors-item">
+					</article>
+					<article class="portfolio-item">
 						<a href="#" class="sponsors-link"><img src="" alt="barbershop"></a>
-					</sectiion>
-					<sectiion class="sponsors-item">
+					</article>
+					<article class="portfolio-item">
 						<a href="#" class="sponsors-link"><img src="" alt="pink"></a>
-					</sectiion>
-					<sectiion class="sponsors-item">
+					</article>
+					<article class="portfolio-item">
 						<a href="#" class="sponsors-link"><img src="" alt="miska"></a>
-					</sectiion>
-				</article>
+					</article>
+				</section>
 			</div>	
 			
 			<div class="map clearfix">
@@ -160,8 +169,8 @@
   				</div>
 
   				<div class="footer-info">
-  					<h2 class="footer-headline">Давайте дружить, это выгодно!</h2>
-  					<span class="proposition">Скидка 10% для друзей из социальных сетей.</span>
+  					<p class="footer-text">Давайте дружить, это выгодно!</p>
+  					<p class="proposition">Скидка 10% для друзей из социальных сетей.</p>
   				</div>
 			</div>		
 		</footer>
