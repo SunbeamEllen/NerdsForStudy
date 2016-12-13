@@ -38,7 +38,12 @@ body{
 .logo{
 	float: left;
 	margin-right: 10%;
+	opacity: 1;
 }
+
+.logo:hover{opacity: 0.8;}
+
+.logo:active{opacity: 0.3;}
 
 .main-navigation{
 	float: left;
@@ -326,5 +331,37 @@ body{
 
 .item-mishka{padding-top: 6px;}
 
+.map{
+	width: 100%;
+	height: 416px;
+	position: relative;
+	background: url(../image/map.jpg) no-repeat center center;
+	margin-bottom: 68px;
+}
 
+.main-contacts{
+	width: 220px;
+	padding: 48px;
+	background-color: #fff;
+	position: absolute;
+	top: 54px;
+	left: 50%;
+	margin-left: -580px;
+}
 
+.main-contacts .heading{
+	font-size: 18px;
+	line-height: 30px;
+	margin-bottom: 23px;
+}
+
+.main-contacts p{
+	color: #666;
+	margin: 0px 0px 19px 2px;
+	line-height: 18px;
+}
+
+.feedback{
+	margin-top: 18px;
+    padding: 16px 45px;
+}
