@@ -305,6 +305,7 @@ body{
 	display: inline-block;
 	vertical-align: top;
 	margin-right: 40px;
+	opacity: 0.2;
 }
 
 .portfolio-item:last-child{
@@ -324,6 +325,10 @@ body{
 	top: 18px;
 	right: -20px;
 }
+
+.portfolio-item:hover{opacity: 1;}
+
+.portfolio-item:active{opacity: 0.1;}
 
 .item-academy{padding-top: 16px;}
 
