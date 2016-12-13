@@ -114,6 +114,7 @@ body{
 	background: url(../image/cart-icon.png) no-repeat;
 	top: 8px;
 	left: -40px;
+	opacity: 0.3;
 }
 
 .btn{
@@ -370,3 +371,40 @@ body{
 	margin-top: 18px;
     padding: 16px 45px;
 }
+
+
+/*=========FOOTER=========*/
+.main-footer{
+	width: 100%;
+	padding-top: 20px;
+	padding-bottom: 70px;
+}
+
+.footer-social{
+	width: 300px;
+	float: left;
+	margin-right: 80px;
+}
+
+.footer-info{
+	float: left;
+	width: 560px;
+	padding-left: 20px;
+}
+
+.footer-text{
+	font-size: 36px;
+	line-height: 36px;
+	font-weight: 700;
+	color: #000;
+	margin: 0px;
+	margin-bottom: 13px;
+}
+
+.proposition{
+	line-height: 22px;
+	color: #444;
+	margin: 0px;
+}
+
+.modal-content{display: none;}
