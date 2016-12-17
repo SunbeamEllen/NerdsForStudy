@@ -75,7 +75,7 @@ body{
 .main-header{
 	padding-top: 48px;
 	background-color: #eee;
-	margin-bottom: 79px;
+	margin-bottom: 81px;
 }
 
 .logo{
@@ -308,8 +308,8 @@ body{
 .workspace{
 	width: 100%;
 	border-bottom: 2px solid #eeeeee;
-	margin-bottom: 42px;
-	padding-bottom: 78px;
+	margin-bottom: 40px;
+	padding-bottom: 80px;
 }
 
 .workspace-item{
@@ -434,20 +434,32 @@ body{
 
 .preferences-heading{
 	margin-left: 17px;
-	margin-bottom: 48px;
+	margin-bottom: 61px;
 }
 
-.percent{
+.result{
 	display: inline-block;
+	position: relative;
+	vertical-align: top;
 	font-size: 45px;
 	line-height: 10px;
 	font-weight: 700;
 	color: #000;
-	margin-bottom: 35px;
+	margin-bottom: 38px;
+}
+
+.percent{
+	display: inline-block;
+	position: absolute;
+	vertical-align: top;
+	font-size: 25px;
+	line-height: 1;
+	top: -14px;
 }
 
 .preferences-item{
 	line-height: 18px;
+	display: inline-block;
 }
 
 .portfolio{
@@ -503,7 +515,7 @@ body{
 	height: 416px;
 	position: relative;
 	background: url(../image/map.jpg) no-repeat center center;
-	margin-bottom: 68px;
+	margin-bottom: 54px;
 }
 
 .main-contacts{
@@ -535,7 +547,7 @@ body{
 /*=========FOOTER=========*/
 .main-footer{
 	width: 100%;
-	padding-top: 20px;
+	padding-top: 16px;
 	padding-bottom: 70px;
 }
 
@@ -553,7 +565,7 @@ body{
 	height: 78px;
 	border-radius: 50%;
 	background-color: #e1e1e1;
-	margin-right: 12px;
+	margin-right: 9px;
 	font-size: 0;
 }
 
@@ -606,10 +618,11 @@ body{
 .footer-text{
 	font-size: 36px;
 	line-height: 36px;
-	font-weight: 700;
+	font-weight: 500;
 	color: #000;
 	margin: 0px;
-	margin-bottom: 13px;
+	margin-bottom: 10px;
+	margin-top: 4px;
 }
 
 .proposition{
