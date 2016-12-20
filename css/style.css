@@ -120,6 +120,20 @@ body{
 	text-transform: uppercase;
 }
 
+.active{
+	position: relative;
+}
+
+.active::after{
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 2px;
+	background-color: #fb565a;
+	bottom: 0px;
+	left: 0px;
+}
+
 .main-navigation-item:hover, 
 .bucket:hover{
 	color: #fb565a;
@@ -632,18 +646,54 @@ body{
 	margin: 0px;
 }
 /*=========MODAL C0NTENT=========*/
+@keyframes bounce {
+  0%   {
+    transform: translateY(-2000px);
+  }
+  70%  {
+    transform: translateY(30px);
+  }
+  90%  {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(-10px);
+  }
+  20%, 40%, 60%, 80% {
+    transform: translateX(10px);
+  }
+}
+
 .modal-content{
-	display: block;
+	display: none;
 	position: absolute;
 	width: 772px;
 	padding: 66px 90px 70px 98px;
 	background-color: #fff;
 	color: #444;
 	box-shadow: 0px 20px 75px rgba(0,0,0,0.75);
-	bottom: 248px;
+	top: 68.83%;
 	left: 50%;
 	z-index: 20;
 	margin-left: -480px; 
+}
+
+.modal-content-show {
+  display: block;
+  animation: bounce 0.6s;
+}
+
+.modal-error {
+  animation: shake 0.6s;
 }
 
 .modal-content span{
@@ -652,10 +702,12 @@ body{
 	line-height: 1;
 	font-weight: 500;
 	color: #000;
-	margin-bottom: 68px;
+	padding-bottom: 69px;
 }
 
 .close{
+	position: absolute;
+	outline: none;
 	width: 21px;
 	height: 21px;
 	font-size: 0;
@@ -672,7 +724,7 @@ body{
 	content: "";
 	position: absolute;
 	width: 25px;
-	height: 4px;
+	height: 3px;
 	top: 9px;
 	left: -2px;
 	background-color: #fb565a;
@@ -696,7 +748,6 @@ body{
 .close:active::before,
 .close:active::after{
 	opacity: 0.1;
-	outline: none;
 }
 
 .popup-form{
@@ -706,28 +757,38 @@ body{
 
 .position-box{
 	position: relative;
-	float: left;
-	margin-right: 38px;
-	margin-left: 2px;
+	display: inline-block;
+	font-size: 0px;
 }
 
-.position-box:nth-child(2){
-	margin-right: 0px;
+.position-box:first-of-type{
+	margin-right: 35px;
 }
 
 .popup-input,
 .popup-textarea{
-	display: block;
 	box-sizing: border-box;
 	outline: none;
 	width: 360px;
-	padding: 16px 14px 14px 14px;
+	padding: 15px 14px 14px 14px;
 	border: 2px solid #d7dcde;
 	border-radius: 3px;
 	font-size: 16px;
 	line-height: 18px;
 	color: #444;
-	margin-bottom: 36px;
+	margin-left: 2px;
+    margin-bottom: 60px;
+}
+
+.popup-input:hover,
+.popup-textarea:hover{
+	border-color: #b4b9bb;
+}
+
+.popup-input:focus,
+.popup-textarea:focus{
+	border-color: #000;
+    color: #000;
 }
 
 .popup-input:focus::-webkit-input-placeholder{ color:transparent; }
@@ -736,10 +797,10 @@ body{
 .popup-input:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
 
 .popup-label,
-.textare-label{
+.textarea-label{
 	position: absolute;
 	top: -27px;
-	left: 0px;
+	left: 2px;
 	font-size: 16px;
 	line-height: 18px;
 	color: #000;
@@ -747,13 +808,21 @@ body{
 }
 
 .textarea-label{
-	top: 0px;
-	left: 0px;
+	left: 3px;
 }
 
 .popup-textarea{
-	position: relative;
-	width: 100%;	
-	padding: 13px;
-	margin-bottom: 19px;
+	box-sizing: border-box;
+	width: 760px;	
+	padding: 11px 11px 14px 14px;
+	margin-bottom: 35px;
+	margin-right: 0px;
+}
+
+.modal-btn{
+	outline: none;
+    border: none;
+    padding: 16px 82px;
+    margin-left: 2px;
+    margin-bottom: 14px;
 }
