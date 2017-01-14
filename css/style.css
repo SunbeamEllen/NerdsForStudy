@@ -330,6 +330,7 @@ body {
 .btn-3:checked ~ .slides .slide:nth-child(3) { 
   display: block;
 }
+/*=========HEADER END=========*/
 
 /*=========INDEX=========*/
 .workspace{
@@ -591,6 +592,11 @@ body {
 	margin-top: 18px;
   padding: 16px 45px;
 }
+/*=========INDEX END=========*/
+
+/*=========CATALOG=========*/
+
+/*=========CATALOG END=========*/
 
 /*=========FOOTER=========*/
 .main-footer {
@@ -678,6 +684,7 @@ body {
 	line-height: 22px;
 	color: #444444;	
 }
+/*=========FOOTER END=========*/
 
 /*=========MODAL C0NTENT=========*/
 @keyframes bounce {
