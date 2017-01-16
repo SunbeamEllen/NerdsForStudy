@@ -35,9 +35,9 @@
 		<main>
 			<div class="container clearfix">
 				<aside class="choice">
-					<form action="#" class="choice-zone" method="get">
-						<fildset class="choice-zone-item">
-							<legend>Стоимость</legend>
+					<form class="choice-zone" action="#" method="get">
+						<fieldset class="choice-zone-item">
+							<legend>Стоимость:</legend>
 							<div class="range-controls">
 								<div class="scale">
 									<div class="bar"></div>
@@ -47,12 +47,12 @@
 							</div>
 							<div class="price-controls">
 								<label class="min-price">от <input name="min-price" type="text" value="0"></label>
-        						<label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+        				<label class="max-price">до <input name="max-price" type="text" value="15000"></label>
 							</div>
-						</fildset>
+						</fieldset>
 
 						<fieldset class="choice-zone-item">
-							<legend>Сетка</legend>
+							<legend>Сетка:</legend>
 							<div class="network">
 								<input type="radio" class="radio-input" name="grid" value="Адаптивная" id="adaptive" checked>
 								<label for="adaptive" class="radio-label">Адаптивная</label>
@@ -64,21 +64,21 @@
 						</fieldset>
 
 						<fieldset class="choice-zone-item">
-							<legend>Особенности</legend>
+							<legend>Особенности:</legend>
 							<div class="features">
-								 <input type="checkbox" class="checkbox-input" name="slider" value="Слайдер" id="slider">
-								 <label for="slider" class="checkbox-label"></label>
+								 <input type="checkbox" class="checkbox-input" name="slider" value="Слайдер" id="slider" checked>
+								 <label for="slider" class="checkbox-label">Слайдер</label>
 								 <input type="checkbox" class="checkbox-input" name="features" value="Преимущества" id="features">
-								 <label for="features" class="checkbox-label"></label>
-								 <input type="checkbox" class="checkbox-input" name="news" value="Новости" id="news">
-								 <label for="news" class="checkbox-label"></label>
+								 <label for="features" class="checkbox-label">Блок преимуществ</label>
+								 <input type="checkbox" class="checkbox-input" name="news" value="Новости" id="news" checked>
+								 <label for="news" class="checkbox-label">Новости</label>
 								 <input type="checkbox" class="checkbox-input" name="gallery" value="Галлерея" id="gallery">
-								 <label for="gallery" class="checkbox-label"></label>
+								 <label for="gallery" class="checkbox-label">Галерея</label>
 								 <input type="checkbox" class="checkbox-input" name="bucket" value="Корзина" id="bucket">
-								 <label for="bucket" class="checkbox-label"></label>								
+								 <label for="bucket" class="checkbox-label">Корзина</label>								
 							</div>
 						</fieldset>
-						<button class="btn btn-show" type="submit">Показать</button>
+						<a class="btn btn-show" href="#">Показать</a>
 					</form>
 				</aside>
 
@@ -189,5 +189,6 @@
 			</form>
 		</div>
 	</div>
+	<script src="js/modal.content.js"></script>	
 </body>
 </html>
