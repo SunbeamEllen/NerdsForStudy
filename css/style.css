@@ -1,48 +1,48 @@
 @font-face {
-  font-family: "Roboto";    
-  src: url("../fonts/Roboto.woff2") format("woff2"),
-       url("../fonts/Roboto.woff") format("woff");
-  font-weight: 400; 
-	font-style: normal; 
+	font-family: "Roboto";
+	src: url("../fonts/Roboto.woff2") format("woff2"),
+			 url("../fonts/Roboto.woff") format("woff");
+	font-weight: 400;
+	font-style: normal;
 }
 
 body {
 	position: relative;
-	max-width: 1440px;
+	max-width: 1200px;
 	margin: 0 auto;
 	font: 16px/24px "Roboto", "Arial", sans-serif;
 	color: #283136;
-	background-color: #ffffff;	
+	background-color: #ffffff;
 }
 
 .sprite {
 	display: block;
-  background-image: url(../image/sprite.png);
-  background-repeat: no-repeat;  
+	background-image: url(../image/sprite.png);
+	background-repeat: no-repeat;
 }
 
 .sprite-cart-icon {
-  width: 15px;
-  height: 15px;
-  background-position: -10px -10px;
+	width: 15px;
+	height: 15px;
+	background-position: -10px -10px;
 }
 
 .sprite-checkbox-on-png-copy {
-  width: 27px;
-  height: 23px;
-  background-position: -10px -45px;
+	width: 27px;
+	height: 23px;
+	background-position: -10px -45px;
 }
 
 .sprite-fb-icon {
-  width: 12px;
-  height: 22px;
-  background-position: -10px -88px;
+	width: 12px;
+	height: 22px;
+	background-position: -10px -88px;
 }
 
 .sprite-insta-icon {
-  width: 21px;
-  height: 21px;
-  background-position: -10px -130px;
+	width: 21px;
+	height: 21px;
+	background-position: -10px -130px;
 }
 
 .sprite-radio-on-png-copy {
@@ -52,13 +52,13 @@ body {
 }
 
 .sprite-vk-icon {
-  width: 26px;
-  height: 15px;
-  background-position: -10px -216px;
+	width: 26px;
+	height: 15px;
+	background-position: -10px -216px;
 }
 
 .container {
-	width: 1160px; 
+	width: 1160px;
 	margin: 0 auto;
 	padding: 0 20px;	
 }
@@ -92,7 +92,7 @@ body {
 
 .page-navigation {
 	float: left;
-	width: 488px;
+	width: 500px;
 	margin-left: 4%;
 }
 
